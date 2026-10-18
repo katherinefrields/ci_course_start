@@ -1,4 +1,4 @@
-name: Python versions
+name: OS Versions
 
 on:
   push:
