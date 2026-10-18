@@ -46,7 +46,7 @@ select = ["E", "F", "W", "B"]
 convention = "numpy"
 
 [tool.pytest.ini_options]
-pythonpath = ["src", "ci_course_start"]
+pythonpath = ["src"]
 testpaths = ["tests"]
 
 [tool.coverage.run]
