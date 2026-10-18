@@ -38,13 +38,11 @@ jobs:
       - name: Test with pytest
         run: |
           pytest 
-
-
-
-- name: Upload coverage reports to Codecov
-  uses: codecov/codecov-action@v7
-  with:
-    token: ${{ secrets.CODECOV_TOKEN }}
-    fail_ci_if_error: true
-    files: coverage.xml
+          
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v7
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          fail_ci_if_error: true
+          files: coverage.xml
 
