@@ -3,6 +3,14 @@ import numpy as np
 import ci_course
 
 
+def test_summarises_all_missing_column():
+    summary = ci_course.summarise(np.array([np.nan, np.nan, np.nan]))
+
+    assert summary["n"] == 0.0
+    assert summary["mean"] == 0.0
+    assert summary["min"] == 0.0
+    assert summary["max"] == 0.0
+
 def test_summarises_a_complete_column():
     summary = ci_course.summarise(np.array([1.0, 2.0, 3.0]))
 
