@@ -1,6 +1,5 @@
 import ci_course.cli
 
-
 def test_prints_a_summary(capsys):
     assert ci_course.cli.main([]) == 0
 

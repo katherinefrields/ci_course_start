@@ -6,6 +6,7 @@ from pathlib import Path
 import numpy as np
 
 
+
 def sample_data_path():
     """
     Return the path to the sample measurements bundled with the package.
