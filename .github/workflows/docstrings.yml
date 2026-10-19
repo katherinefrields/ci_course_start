@@ -1,4 +1,4 @@
-name: Basic GitHub Actions Workflow
+name: Docstring Workflow
 
 on:
   push:
