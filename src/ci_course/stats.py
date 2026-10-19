@@ -40,7 +40,7 @@ def summarise(values):
 
 def count_missing(values):
     """
-    Counts all the missing values in an array
+    Count all the missing values in an array.
 
     Parameters
     ----------
