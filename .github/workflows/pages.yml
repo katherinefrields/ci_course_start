@@ -10,6 +10,9 @@ on:
 jobs:
   basic-job:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     permissions:
       pages: write
@@ -34,6 +37,8 @@ jobs:
 
     - uses: actions/upload-pages-artifact
 
-    - uses: actions/deploy-pages
+    - name: Deploy Github Pages
+      uses: actions/deploy-pages
+      id: deployment
 
     
