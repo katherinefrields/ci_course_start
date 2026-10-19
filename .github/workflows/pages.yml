@@ -38,6 +38,8 @@ jobs:
     - uses: actions/configure-pages@v4
 
     - uses: actions/upload-pages-artifact@v4
+      with:
+        path: docs/_build/html
 
     - name: Deploy Github Pages
       id: deployment
