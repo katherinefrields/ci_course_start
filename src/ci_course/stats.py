@@ -46,7 +46,6 @@ def count_missing(values):
     ----------
     values : array_like
         The numerical values to summarise. Missing values should be ``nan``.
-    
     Returns
     -------
         The number of missings in the values.
