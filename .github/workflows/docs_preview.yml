@@ -1,7 +1,7 @@
 name: Docs Preview Workflow
 
 on:
-  pull_request:
+  push:
     branches: ["main"]
   workflow_dispatch:
 
@@ -43,7 +43,7 @@ jobs:
       id: deployment
       uses: actions/deploy-pages@v5
 
-    - name: Upload documentation preview
+    - name: Upload documentation preview test
       uses: actions/upload-artifact@v7
       with:
         name: documentation-preview
