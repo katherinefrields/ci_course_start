@@ -76,3 +76,11 @@ jobs:
     - name: Deploy Github Pages
       id: deployment
       uses: actions/deploy-pages@v5
+
+    - name: Upload documentation preview test
+      uses: actions/upload-artifact@v7
+      with:
+        name: documentation-preview
+        path: docs/_build/html
+        if-no-files-found: error
+        retention-days: 7
